@@ -1,0 +1,6 @@
+câu kéo code về từ git 
+git clone <URL_kho_luu_tru> [<thư_mục_đích>]
+câu lệnh đẩy code lên git 
+git add .
+git commit -m "Thông điệp commit của bạn"
+git push orgin main

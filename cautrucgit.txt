@@ -1,3 +1,10 @@
+đẩy 1 thư mục lên git 
+git init
+git add .
+git status
+git commit -m " tên "
+git branch -M main
+git remote add origin< link chứa thư code muốn đẩy lên >
 câu kéo code về từ git 
 git clone <URL_kho_luu_tru> [<thư_mục_đích>]
 câu lệnh đẩy code lên git 

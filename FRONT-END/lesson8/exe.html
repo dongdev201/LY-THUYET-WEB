@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập game random</title>
+    <style>
+        .box{
+            background-color: blue;
+            width: 200px;
+            height: 150px;
+            margin-bottom: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="btn" onclick="handleReward()">Quay số</button>
+    <script>
+        // var listReward = ["Sắt", "Đồng", "Nhôm", "Vàng", "Bạc", "Kim cương"];
+
+        // var box = document.querySelector('.box');
+
+        
+
+
+        // var handleReward = () => {
+        //     var reward = Math.random();
+        //     var rewardInt = Math.floor(reward * listReward.length); // trả về 0 - istReward.length
+
+        //     var i = 3;
+        //     var interval =  setInterval(() => {
+        //         box.innerHTML = i;
+        //         i = i - 1;
+        //     }, 500);
+        // }
+
+
+        //1-3(xỉu), 4-6(tài)
+        var handleReward = () => {
+            var box = document.querySelector('.box');
+            var reward = Math.random();
+            var rewardInt = Math.floor((reward * 6) + 1);
+            console.log(rewardInt);
+
+            var i = 3;
+            box.innerHTML = 'Bắt đầu quay';
+            var interval =  setInterval(() => {
+                box.innerHTML = i;
+                if(i == 0){
+                    clearInterval(interval);
+                    if(rewardInt <= 3){
+                        box.innerHTML = "Xỉu"
+                    }else{
+                        box.innerHTML = "Tài"
+                    }
+                }
+                i = i - 1;
+            }, 1000);
+        }
+
+    </script>
+</body>
+</html>

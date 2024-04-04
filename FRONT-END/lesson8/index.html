@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đối tượng Date trong javascript</title>
+</head>
+
+<body>
+    <script>
+        // var now = new Date(); // Lấy thời gian hiện tại
+
+        // var month = now.getMonth(); // Lấy tháng (từ 0 đến 11)
+        // console.log("Tháng: " + (month + 1));
+
+        // var date = now.getDate(); // Lấy ngày trong tháng
+        // console.log("Ngày: " + date);
+
+        // var day = now.getDay(); // Lấy ngày trong tuần (từ 0 đến 6, 0 là Chủ Nhật)
+        // console.log("Ngày trong tuần: " + day);
+
+        // var hours = now.getHours(); // Lấy giờ
+        // console.log("Giờ: " + hours);
+
+        // var minutes = now.getMinutes(); // Lấy phút
+        // console.log("Phút: " + minutes);
+
+        // var seconds = now.getSeconds(); // Lấy giây
+        // console.log("Giây: " + seconds);
+
+        // var isoString = now.toISOString(); // Chuyển đối tượng Date thành chuỗi ISO
+        // console.log("Chuỗi ISO: " + isoString);
+
+        // var dateString = now.toDateString(); // Chuyển đối tượng Date thành chuỗi ngày tháng
+        // console.log("Chuỗi ngày tháng: " + dateString);
+
+        // var localDateString = now.toLocaleDateString(); // Chuyển đối tượng Date thành chuỗi ngày tháng dựa trên cài đặt địa phương
+        // console.log("Chuỗi ngày tháng địa phương: " + localDateString);
+
+
+
+        // 2. các hàm thời gian
+
+        // #setInterval
+        // var i = 0;
+        // var demo = () => {
+        //     i = i + 1;
+        //     console.log(i);
+        // }
+
+        // setInterval(demo, 3000);
+
+        // 
+        
+        // #setInterval(chạy vĩnh viễn)
+        // setInterval(() => {
+        //     console.log("Đã hết 5 giây");
+        // }, 1000);
+
+        // #setTimeout (chỉ chạy đúng 1 lần)
+        // setTimeout(() => {
+        //     console.log("Đã hết 5 giây");
+        // }, 1000);
+
+
+
+        // Các hàm về số
+        // var randomNumber = Math.random(); // Trả về một số ngẫu nhiên từ 0 đến 1
+        // console.log(randomNumber);
+
+        
+        // var number1 = 2.2;
+        // var number2 = 3.6;
+        // var number3 = 5.5;
+        
+        //#Math.floor() - Làm tròn dưới
+        // console.log("number1: ", Math.floor(number1));
+        // console.log("number2: ", Math.floor(number2));
+        // console.log("number3: ", Math.floor(number3));
+        
+        //#Math.ceil() - Làm tròn lên
+        // console.log("number1: ", Math.ceil(number1));
+        // console.log("number2: ", Math.ceil(number2));
+        // console.log("number3: ", Math.ceil(number3));
+
+        //#Math.round() - Làm tròn chuẩn
+        // console.log("number1: ", Math.round(number1));
+        // console.log("number2: ", Math.round(number2));
+        // console.log("number3: ", Math.round(number3));
+
+
+        
+        var random = Math.random(); // luôn trả về từ 0-1
+        var number = 10;
+
+        console.log("random: ", random); 
+        console.log("number: ", number); 
+        console.log("random * number: ", random * number);
+        
+        var randomInt = Math.floor(random * number);
+        console.log("randomInt: ", randomInt);
+
+
+        // var randomInt = Math.floor(Math.random() * 10); // Trả về một số nguyên ngẫu nhiên từ 0 đến 9
+        
+        // console.log(randomInt);
+
+
+
+    </script>
+</body>
+
+</html>

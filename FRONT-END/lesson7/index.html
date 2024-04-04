@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input class="demo" type="text" id="myInput">
+    <div class="box"></div> -->
+
+    <input class="username" type="text" placeholder="Nhập username">
+    <br> <br>
+    <input class="password" type="password" placeholder="Nhập password">
+    <br> <br>
+    <button onclick="login()">Đăng nhập</button>
+
+
+    <script>
+        var data = {
+            username: 'admin',
+            password: '123456'
+        }
+
+        var username = document.querySelector('.username');
+        var password = document.querySelector('.password');
+
+   
+
+        var login  = () => {
+            // if(!(username.value == data.username)){
+            //     alert("Sai username!");
+            // }else if(!(password.value == data.password)){
+            //     alert("Sai password!");
+            // }
+
+
+            if(username.value == data.username && password.value == data.password){
+                console.log('đăng nhập thành công');
+                window.open('https://www.youtube.com/', '_blank');
+            }else{
+                console.log('THông tin đăng nhập không chính xác!');
+            }
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var inputValue = document.querySelector('.demo');
+        // var box = document.querySelector('.box');
+
+        // inputValue.addEventListener('input', () => {
+        //     box.innerHTML = inputValue.value
+        // })
+
+    </script>
+</body>
+</html>
